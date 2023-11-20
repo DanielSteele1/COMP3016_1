@@ -16,14 +16,11 @@ class Player;
 class Game;
 class MainMenu;
 class CreditsMenu;
-
-//REMINDER   -  FINISH ALL ROOMS( JUST MAKE 5 ) - 
-
-// Player Class - this class controls every stat the player has, such as thier name, amount of coins, health etc. 
+// Player Class - this class controls every stat the player has, such as their name, amount of coins, health etc. 
 
 Player::Player() : coins(0), health(100) {}
 
-// stores the players name
+// stores the player's name
 string Player::getName() const {
     return name;
 }
@@ -41,7 +38,7 @@ void Player::addCoins(int amount) {
     coins += amount;
 }
 
-// this is the overall amount of coins a player has at one time ( use overallCoinAmount() )
+//This is the overall amount of coins a player has at one time ( use overallCoinAmount() )
 void Player::overallCoinAmount() const {
 
     cout << " Current Coins: " << getCoins() << endl;
@@ -56,7 +53,7 @@ void Player::takeDamage(int damage) {
      handlePlayerDeath();
    }
 }
- //this enables the users current health to be shown ( use gethealth() ) 
+ //this enables the user's current health to be shown ( use gethealth() ) 
  int Player::getHealth() const {
 
         return health;    
@@ -173,7 +170,7 @@ public:
 
         cin >> playerName;
 
-        // sets the players name to a name of thier liking
+        // sets the player's name to a name of their liking
         player.setName(playerName);
 
         cout << "Welcome, " << player.getName() << "!" << endl;
@@ -204,7 +201,7 @@ public:
 
         cout << "       You think it's " << player.getName() << endl;
 
-        cout << "       You see a crack in the old broken down stone cell wall. You decide to : " << endl;
+        cout << "       You see a crack in the old broken down stone cell wall. You decide to: " << endl;
 
         cout << " " << endl;
         cout << "------------------------------------------------------------------------------------------------------------------------ " << endl;
@@ -241,7 +238,7 @@ public:
                     cout << "You proceed into the next room. . . " << endl;
                     cout << "    " << endl;
 
-                    cout << "Press Enter to progess... " << endl;
+                    cout << "Press Enter to progress... " << endl;
 
                     cout << " " << endl;
                     cout << " " << endl;
@@ -269,7 +266,7 @@ public:
                     cout << "In one of the pockets, you find a small pouch containing 10 coins. lucky you! " << endl;
                     // plus 10 coins 
                     foundCoins = 10;  // this is how many coins have just been found
-                    player.addCoins(foundCoins); // we're adding the found coins to the players overall coin collection. 
+                    player.addCoins(foundCoins); // we're adding the found coins to the player's overall coin collection. 
 
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
 
@@ -415,7 +412,7 @@ private:
 
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
 
-                    cout << "There's alot of tools and weapons here in some barrels, some are even complete." << endl;
+                    cout << "There's a lot of tools and weapons here in some barrels, some are even complete." << endl;
                     cout << " " << endl;
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
 
@@ -449,10 +446,10 @@ private:
                     cout << "The note reads: " << endl;
                     cout << " " << endl;
                     cout << " =================================================================================================" << endl;
-                    cout << " Dear Maelstrom Sovereign, Overlord of the Ebonland, I hope you this note gets to you quickly." << endl;
+                    cout << " Dear Maelstrom Sovereign, Overlord of the Ebonland, I hope this note gets to you quickly." << endl;
                     cout << " As requested, enclosed to you is the new key for the ________ room." << endl;
                     cout << " " << endl;
-                    cout << " P.S please make sure not to lose this one ... this is the 3rd Key iv had to make this week." << endl;
+                    cout << " P.S. Please make sure not to lose this one ... this is the 3rd Key iv had to make this week." << endl;
                     cout << " " << endl;
                     cout << " [Blacksmith's Signature] " << endl;
                     cout << " " << endl;
@@ -467,8 +464,8 @@ private:
                     cout << " " << endl;
                     cout << "You also find 5 coins in the small pouch! nice!" << endl;
 
-                    foundCoins = 5;  // this is how many coins have just been found
-                    player.addCoins(foundCoins); // we're adding the found coins to the players overall coin collection. 
+                    foundCoins = 5;  //This is how many coins have just been found
+                    player.addCoins(foundCoins); //We're adding the found coins to the player's overall coin collection. 
 
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
 
@@ -491,7 +488,7 @@ private:
 
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
 
-                    cout << "Just before you leave the room, you hear footsteps behind you. You don't stick around to find out who's they were. " << endl;
+                    cout << "Just before you leave the room, you hear footsteps behind you. You don't stick around to find out who they were. " << endl;
                     cout << " " << endl;
 
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
@@ -499,7 +496,7 @@ private:
                     cout << "You proceed into the next room. . . " << endl;
                     cout << "    " << endl;
                     // Jump to the next room 
-                    cout << "Press Enter to progess . . . " << endl;
+                    cout << "Press Enter to progress . . . " << endl;
 
                     cout << " " << endl;
                     cout << " " << endl;
@@ -593,7 +590,7 @@ private:
 
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
 
-                    cout << "As you delve deeper into the moss covered and decrepit ruins you discover an old chest, sealed with a rusty lock. " << endl;
+                    cout << "As you delve deeper into the moss-covered and decrepit ruins you discover an old chest, sealed with a rusty lock. " << endl;
                     cout << " " << endl;
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
 
@@ -640,7 +637,7 @@ private:
                         break;
 
                     case 2:
-                        cout << "You decide not to open the chest, and decide to head back to the ruins enterance. " << endl;
+                        cout << "You decide not to open the chest, and decide to head back to the ruins entrance. " << endl;
 
                         break;
 
@@ -705,7 +702,7 @@ private:
                     cout << "You can't quite understand the text, but decide to open the door anyway. " << endl;
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
                     cout << " " << endl;
-                    cout << "As you open the door, you suddenly feel alot weaker, but manage to get thought to the next room. " << endl;
+                    cout << "As you open the door, you suddenly feel a lot weaker but manage to get through to the next room. " << endl;
                     cout << " " << endl;
 
                     player.takeDamage(60);  // damages player
@@ -715,7 +712,7 @@ private:
                     cout << "Despite being hurt, you manage to slowly walk into the next room. . . " << endl;
                     cout << "    " << endl;
                     // Jump to the next room 
-                    cout << "Press Enter to progess . . . " << endl;
+                    cout << "Press Enter to progress . . . " << endl;
 
                     cout << " " << endl;
                     cout << " " << endl;
@@ -757,7 +754,7 @@ private:
 
     void Room4() 
     {
-        // this room is a Library - one shelf has a hidden passage inside revealing the treasure room. 
+        //This room is a Library - one shelf has a hidden passage inside revealing the treasure room. 
 
         system("cls");
 
@@ -789,7 +786,7 @@ private:
 
             cout << "1. Move to the middle of the library  " << endl;
             cout << "2. Explore the deep labyrinth of bookshelves (left) " << endl;
-            cout << "3. Check the alchemists workshop " << endl;
+            cout << "3. Check the alchemist's workshop " << endl;
             cout << "4. Quit game to main menu " << endl;
 
             cout << "      " << endl;
@@ -808,19 +805,19 @@ private:
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
                     cout << " " << endl;
 
-                    cout << "On the oak reading table, there are many scriptures and books lying in a messy pile. " << endl;
+                    cout << "On the oak reading table, many scriptures and books are lying in a messy pile. " << endl;
                     cout << " " << endl;
 
                     cout << "You get curious, and decide to pick up a book and give it a read. " << endl;
                     cout << " " << endl;
-                    cout << "But, as you do, you notice that under the pile was a small button. it's triggered as you move the pile. " << endl;
+                    cout << "But, as you do, you notice that under the pile is a small button. it's triggered as you move the pile. " << endl;
                     cout << " " << endl;
                     cout << "There's a tense few seconds of silence, before circular winding stairs start rising out of the floor!  " << endl;
                     cout << " " << endl;
                     cout << "You decide to climb the stairs and investigate. " << endl;
                     cout << " " << endl;
 
-                    cout << "Press Enter to progess . . . " << endl;
+                    cout << "Press Enter to progress . . . " << endl;
 
                     cout << " " << endl;
                     cout << " " << endl;
@@ -840,10 +837,10 @@ private:
                     cout << " " << endl;
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
                     cout << " " << endl;
-                    cout << "To begin with, being amonsgst dusty bookshelves, it's very easy to know how far you've been." << endl;
+                    cout << "To begin with, being among the dusty bookshelves, it's very easy to know how far you've been." << endl;
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
                     cout << " " << endl;
-                    cout << "But the more you head down the winding nerverending corridoors, you foggier and foggier it gets. " << endl;
+                    cout << "But the more you head down the winding neverending corridors, you foggier and foggier it gets. " << endl;
                     this_thread::sleep_for(std::chrono::milliseconds(2000));
                     cout << " " << endl;
                     cout << "And the harder it is to find you're way.  " << endl;
@@ -864,7 +861,7 @@ private:
                         setHasKey(false);
                         cout << " * Item Broken: Key * " << endl;
                         cout << " " << endl;
-                        cout << "Press Enter to progess . . . " << endl;
+                        cout << "Press Enter to progress . . . " << endl;
 
                         cout << " " << endl;
                         cout << " " << endl;
@@ -872,7 +869,7 @@ private:
                         cin.ignore(numeric_limits<streamsize>::max(), '\n');  // User has to press enter to return to the menu screen. 
                         cin.get();
 
-                        // player finds the trearure room! 
+                        // player finds the treasure room! 
                         TreasureRoom();
 
                     }
@@ -900,15 +897,15 @@ private:
                     break;
                 case 3:
 
-                    cout << "You decide to check the alchemists workshop " << endl;
+                    cout << "You decide to check the alchemist's workshop " << endl;
                     cout << " " << endl;
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
 
-                    cout << "As you enter the alchemists workshop, you notice the air is alot thicker and more dense in here,    " << endl;
-                    cout << "most likely due to all the brewing and growing of herbs that once went on in this myseterious place." << endl;
+                    cout << "As you enter the alchemist's workshop, you notice the air is a lot thicker and denser in here,    " << endl;
+                    cout << "most likely due to all the brewing and growing of herbs that once went on in this mysterious place." << endl;
                     cout << " " << endl;
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
-                    cout << "in the walls of this room are shelves full of old beakers and other glassware, as well as what looks like a few potions." << endl;
+                    cout << "In the walls of this room are shelves full of old beakers and other glassware, as well as what looks like a few potions." << endl;
                     cout << " " << endl;
                     cout << "You wonder how they've survived intact this long. Maybe due to some sort of ancient magic. " << endl;
                     cout << " " << endl;
@@ -916,7 +913,7 @@ private:
 
                     this_thread::sleep_for(std::chrono::milliseconds(2000));
                     cout << " " << endl;
-                    cout << "You feel strenghened! " << endl;
+                    cout << "You feel strengthened! " << endl;
                     cout << " " << endl;
 
                     cout << " * Healed: 30 Health Points * " << endl;
@@ -986,7 +983,7 @@ private:
             cout << " " << endl;
 
             cout << "1. Enter the fiery door (left) " << endl;
-            cout << "2. Enter the green,luscious door (middle) " << endl;
+            cout << "2. Enter the green, luscious door (middle) " << endl;
             cout << "3. Enter the door of pure darkness (right) " << endl;
             cout << "4. Quit game to main menu " << endl;
 
@@ -1005,11 +1002,11 @@ private:
                     cout << "You decide to enter the door made of fire. " << endl;
                     cout << " " << endl;
 
-                    cout << "You think to yourself that the most dangourous paths are often also the most rewarding. " << endl;
+                    cout << "You think to yourself that the most dangerous paths are often also the most rewarding. " << endl;
                     cout << " " << endl;
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
 
-                    cout << "Inside the door is a huge lava lake, with stepping stones made of rock to get the other side. " << endl;
+                    cout << "Inside the door is a huge lava lake, with stepping stones made of rock to get to the other side. " << endl;
                     cout << " " << endl;
                     cout << "On the other side of the lake, you see what you think is the exit. All you have to do is get to the other side. " << endl;
                     cout << " " << endl;
@@ -1019,7 +1016,7 @@ private:
                     cout << " " << endl;
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
 
-                    cout << "Suddenly an earthquiake occurs, and then the lava starts to rise. You quickly try to escape, but it's no use. " << endl;
+                    cout << "Suddenly an earthquake occurs, and then the lava starts to rise. You quickly try to escape, but it's no use. " << endl;
                     cout << " " << endl;
                     cout << " " << endl;
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
@@ -1045,21 +1042,21 @@ private:
                     cout << "You decide to enter the door made of moss and earth. " << endl;
                     cout << " " << endl;
 
-                    cout << "This looks like the safest passage, and due to the amount of vegatation, you deduce that the light must be coming from somwhere. " << endl;
+                    cout << "This looks like the safest passage, and due to the amount of vegetation, you deduce that the light must be coming from somewhere. " << endl;
                     cout << " " << endl;
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
 
                     cout << "The door closes behind you, there's no turning back now.  " << endl;
                     cout << " " << endl;
-                    cout << "As you move closer into the corridoor, you notice something is wrong with the dense vegatation lining the walls. " << endl;
+                    cout << "As you move closer into the corridor, you notice something is wrong with the dense vegetation lining the walls. " << endl;
                     cout << " " << endl;
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
 
-                    cout << "The further down the corridoor you move, the more foul the plants get. At first, there were beautiful plants and flowers. " << endl;
+                    cout << "The further down the corridor you move, the more foul the plants get. At first, there were beautiful plants and flowers. " << endl;
                     cout << " " << endl;
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
 
-                    cout << "Not anymore, they turn darker, almost red in colour, like blood. Some now have spikes, others are sticky, designed to catch live prey. " << endl;
+                    cout << "Not anymore, they turn darker, almost red, like blood. Some now have spikes, others are sticky, designed to catch live prey. " << endl;
                     cout << " " << endl;
                     cout << "You start seeing huge carnivorous plants all around. " << endl;
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
@@ -1082,13 +1079,13 @@ private:
                     break;
                 case 3:
 
-                    cout << "You decide enter the door of pure darkness.  " << endl;
+                    cout << "You decide to enter the door of pure darkness.  " << endl;
                     cout << " " << endl;
 
                     cout << "You think it must be a trick, and this must be the correct way out. but you're terrified.  " << endl;
                     cout << " " << endl;
 
-                    cout << "As you delve further and further down the corridoor, you see ghastly figures appear before you.  " << endl;
+                    cout << "As you delve further and further down the corridor, you see ghastly figures appear before you.  " << endl;
                     cout << " " << endl;
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
 
@@ -1098,7 +1095,7 @@ private:
                     cout << "You try to turn back, but it's too late. the door is sealed shut. " << endl;
                     cout << " " << endl;
 
-                    cout << "With no other choice left, you run down the corridoor, staring death in it's face.  " << endl;
+                    cout << "With no other choice left, you run down the corridor, staring death in its face.  " << endl;
                     cout << " " << endl;
                     this_thread::sleep_for(std::chrono::milliseconds(1000));
 
@@ -1180,7 +1177,7 @@ private:
         player.overallCoinAmount();  // showing the player how many coins they now have overall 
         displayPlayerHealth();
 
-        cout << "Press Enter to progess . . . " << endl;
+        cout << "Press Enter to progress . . . " << endl;
 
         cout << " " << endl;
         cout << " " << endl;
