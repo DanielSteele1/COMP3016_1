@@ -2,6 +2,7 @@ README FILE
 ---------------------------------------------------
 GENERAL INFORMATION 
 - This game was coded in C++, using Visual Studio 2022 version 4.8.09032.
+- This game Practices Object Orientated Programming (OOP).
 - This game was created by Daniel Steele - a Plymouth University student.
 - This Game is called Knights Adventure.
 - Although the .exe isn't included in the Github folder, It will be in the final DLE upload. 
