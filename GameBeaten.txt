@@ -1,0 +1,30 @@
+                    )                                                                           
+                 ( /(                 )    )       (     (                      )               
+                 )\())    (  (  (  ( /( ( /(       )\    )\ )  )     (       ( /(  (  (     (   
+               |((_)\ (   )\ )\))( )\()))\()|   ((((_)( (()/( /((   ))\ (    )\())))\ )(   ))\  
+               |_ ((_))\ |(_|(_))\((_)\(_))/)\   )\ _ )\ ((_)|_))\ /((_))\ )(_))//((_|()\ /((_) 
+               | |/ /_(_/((_)(()(_) |(_) |_((_)  (_)_\(_)_| |_)((_|_)) _(_/(| |_(_))( ((_|_))   
+               | ' <| ' \)) / _` || ' \|  _(_-<   / _ \/ _` |\ V // -_) ' \))  _| || | '_/ -_)  
+               |_|\_\_||_||_\__, ||_||_|\__/__/  /_/ \_\__,_| \_/ \___|_||_| \__|\_,_|_| \___|  
+                            |___/                                                                
+    
+
+                                 --------------- YOU WIN ! ! ! ---------                              
+        
+                                  Congratulations! You escaped the dungeon!
+
+                        Disclaimer: this is a demo of the game, and many ideas are yet to come!
+
+                                          Thanks for playing :) 
+
+                                 ---------------- ------- --------------
+
+                                 Game Design and Programming by Daniel Steele 
+                         
+                        This game was a project developed for my game development class 
+                                        at the University of Plymouth.  
+      
+                                 ---------------- ------- --------------                              
+                                       
+
+                Press Enter to go back to the main menu ...

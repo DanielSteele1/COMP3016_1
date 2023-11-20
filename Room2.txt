@@ -1,0 +1,17 @@
+
+        You find yourself in a dimly lit blacksmiths chamber.
+        
+        The air is heavy with the scent of burning coal, and the flickering light of a forge casts dancing 
+        shadows on the stone walls.
+
+        In one corner, a sturdy workbench holds an assortment of tools, and a rack displays an array of weapons
+        and armor.
+
+        The blacksmith's anvil stands prominently in the center of the room, bearing the marks of countless creations.
+
+        To your left, a narrow archway leads to the main forge area, where molten metal glows with an orange hue.
+
+        To your right, a wooden door creaks softly in the draft, hinting at an exit.
+
+
+        What will you do? 

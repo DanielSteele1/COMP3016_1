@@ -1,0 +1,12 @@
+
+        You leave the blacksmiths chamber, only to find yourself inside some mysterious ruins.
+        
+        It's crumbling pillars strut out from the ground, it's purpose lost to time.
+  
+        to the left of you, there's a creeky wooden bridge leading you over a body of deep water.
+
+        to the right of you, there's a stone door with ancient text written on it, but it's locked.
+       
+
+        What will you do?
+        
